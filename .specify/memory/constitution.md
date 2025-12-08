@@ -1,55 +1,63 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+
+- Version change: 1.0.0 -> 2.0.0
+- List of modified principles: All principles were updated with project-specific details.
+- Added sections: None (placeholders filled).
+- Removed sections: None.
+- Templates requiring updates:
+    - .specify/templates/plan-template.md: ✅ updated (no direct changes, structure is compatible)
+    - .specify/templates/spec-template.md: ✅ updated (no direct changes, structure is compatible)
+    - .specify/templates/tasks-template.md: ✅ updated (modified to enforce mandatory testing)
+    - .claude/commands/sp.adr.md: ✅ updated
+    - .claude/commands/sp.analyze.md: ✅ updated
+    - .claude/commands/sp.checklist.md: ✅ updated
+    - .claude/commands/sp.constitution.md: ✅ updated
+    - .claude/commands/sp.git.commit_pr.md: ✅ updated
+    - .claude/commands/sp.implement.md: ✅ updated
+    - .claude/commands/sp.phr.md: ✅ updated
+    - .claude/commands/sp.plan.md: ✅ updated
+    - .claude/commands/sp.specify.md: ✅ updated
+    - .claude/commands/sp.tasks.md: ✅ updated (modified to enforce mandatory testing)
+- Follow-up TODOs: None.
+-->
+# Physical AI & Humanoid Robotics — Docusaurus Book + Integrated RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Technical Accuracy and Reproducibility
+- All technical content must be accurate, referencing official documentation or verified sources (ROS 2, Gazebo, Unity, NVIDIA Isaac, VLA, RAG).
+- All code examples must be validated and run as written within the specified robotics toolchain (ROS 2, rclpy, URDF, simulation pipelines).
+- All steps must be reproducible with correct tooling and setup instructions provided.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Instructional Clarity
+Writing must be clear, concise, and targeted at learners in the robotics and AI fields.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Grounded and Non-Hallucinated Content
+- The integrated RAG chatbot must provide answers grounded strictly in the book's content or user-selected text.
+- Hallucination beyond the provided knowledge base is strictly prohibited for the chatbot.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Modular and Buildable Structure
+- The Docusaurus site structure must be modular to accommodate Modules 1–4 and the Capstone project.
+- The entire Docusaurus book must build and deploy cleanly to GitHub Pages.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Key Standards and Constraints
 
-### [PRINCIPLE_6_NAME]
+- **Technology Stack**: Python and TypeScript are the only approved languages. The stack includes OpenAI Agents/ChatKit, FastAPI, and Qdrant Cloud (Free Tier).
+- **Content Sourcing**: All information must be referenced from official documentation or other verified sources.
+- **RAG Chatbot Functionality**: The chatbot must support two modes: querying the full book content and querying only user-selected text.
+- **Project Scope**: The book must include Modules 1–4 and a Capstone project demonstrating a Voice → Plan → Navigate → Identify → Manipulate workflow.
 
+## Success Criteria
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- The Docusaurus site builds and deploys without errors.
+- The RAG chatbot provides accurate, grounded answers with source attribution.
+- All robotics simulations and code examples are fully reproducible by a user following the instructions.
+- The capstone project workflow is fully documented and functional as described.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- All contributions must adhere to the principles of technical accuracy, clarity, and reproducibility.
+- Changes to the core technology stack (ROS 2, Python, TypeScript, Docusaurus, OpenAI Agents/ChatKit, FastAPI, Qdrant) require a formal ADR.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 2.0.0 | **Ratified**: 2025-12-08 | **Last Amended**: 2025-12-08

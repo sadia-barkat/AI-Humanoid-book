@@ -1,0 +1,13 @@
+// This file represents a placeholder for a Unity scene file.
+// Creating actual Unity scene files (.unity) requires the Unity editor.
+//
+// To complete this task, you would typically:
+// 1. Open the Unity Editor.
+// 2. Open the Unity project located at `src/module-2/unity/`.
+// 3. Import a basic humanoid model (e.g., a simple FBX or a generic humanoid from the Asset Store).
+// 4. Create a new scene and save it as `Assets/Scenes/HumanoidScene.unity`.
+// 5. Add the humanoid model to the scene.
+// 6. Set up a simple animation (e.g., a "wave" animation) for the humanoid.
+// 7. Configure the humanoid's Animator component to play this animation.
+//
+// This placeholder file exists to mark the location.
