@@ -1,0 +1,16 @@
+{
+  "name": "spec-kit-plus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "docusaurus start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@docusaurus/core": "^3.9.2",
+    "@docusaurus/preset-classic": "^3.9.2"
+  }
+}

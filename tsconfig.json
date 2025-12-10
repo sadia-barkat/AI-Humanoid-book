@@ -1,0 +1,19 @@
+{
+  // This file is not used in compilation. It is here just for a nice editor experience.
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
+    // 👇 ADD THIS SECTION to define Docusaurus aliases for TypeScript
+    "paths": {
+      "@site/*": ["./*"],
+      "@docusaurus/theme-common/internal": [
+        "./node_modules/@docusaurus/theme-common/src/internal"
+      ],
+      "@docusaurus/theme-classic/internal": [
+        "./node_modules/@docusaurus/theme-classic/src/internal"
+      ]
+    }
+  },
+  "exclude": [".docusaurus", "build"]
+}
